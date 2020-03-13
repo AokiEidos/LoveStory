@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <!-- BEGIN HEAD -->
+    <head>
+	<script type="text/javascript">
+		function password() {
+			var testV = 1;
+			var pass1 = prompt('Guess the password, haha~','');
+			while (testV < 3) {
+				if (!pass1)
+					history.go(-1);
+				if (pass1 == "H") {
+					break;
+				}
+				testV+=1;
+				var pass1 =
+				prompt('password error, pls input again!');
+			}
+			if (pass1!="password" & testV ==3)
+			history.go(-1);
+			return " ";
+			}
+		document.write(password());
+	</script>
+        <meta charset="utf-8"/>
+        <title>Only for H</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
+
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- THEME STYLES -->
+        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+    <body id="body" data-spy="scroll" data-target=".header">
+
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo-wrap" href="#body">
+                                <img class="logo-img logo-img-main" src="img/white.png" alt="Nier Logo">
+                                <img class="logo-img logo-img-active" src="img/black.png" alt="Nier Logo">
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://aokieidos.github.io/Valentines/" target="_blank">Anniversary</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" >Articles</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" >Traveling</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" >Photos</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" >Wishes</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" >TBD</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
+
+        <!--========== SLIDER ==========-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="container">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+            </div>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="img/1920x1080/03.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h1 class="carousel-title">Enjoy time with U</h1>
+                                <p class="color-white">When I am with you, you are the world <br/> When not, my world is all of you</p>
+                            </div>
+                            <a href="https://aokieidos.github.io/Valentines/" target="_blank" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Valentines</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="img/1920x1080/04.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h2 class="carousel-title">Love you forever and ever</h2>
+                                <p class="color-white">Past is not involved <br/> The rest of the life please enlighten</p>
+                            </div>
+                            <a class="btn-theme btn-theme-sm btn-white-brd text-uppercase">TBD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--========== SLIDER ==========-->
+
+        <!--========== PAGE LAYOUT ==========-->
+
+        <!--========== END PAGE LAYOUT ==========-->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <!-- Links -->
+            <div class="section-seperator">
+                <div class="content-md container">
+                    <div class="row">
+                        <div class="col-sm-2 sm-margin-b-30">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+							    <li class="footer-list-item">01101100</a></li>
+                                <li class="footer-list-item">01101111</a></li>
+                                <li class="footer-list-item">01110110</a></li>
+                                <li class="footer-list-item">01100101</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                        <div class="col-sm-2 sm-margin-b-30">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item">01111001</a></li>
+                                <li class="footer-list-item">01101111</a></li>
+                                <li class="footer-list-item">01110101</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                        <div class="col-sm-3">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item">..</a></li>
+                                <li class="footer-list-item">.-.. --- ...- .</a></li>
+                                <li class="footer-list-item"> -.-- --- ..-</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+            <!-- End Links -->
+
+            <!-- Copyright -->
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <p class="margin-b-0"><a class="fweight-700" >Copyright @Mikiya</a></p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="margin-b-0"><a class="fweight-700" >This website is still building. To Be Continued!</a></p>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+            <!-- End Copyright -->
+        </footer>
+        <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+   
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <script src="js/components/wow.min.js" type="text/javascript"></script>
+        <script src="js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+        <script src="js/components/google-map.min.js" type="text/javascript"></script>
+
+    </body>
+    <!-- END BODY -->
+</html>
