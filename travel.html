@@ -20,11 +20,28 @@
 
         <!-- THEME STYLES -->
         <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
-		<link href="css/index.css" rel="stylesheet" type="text/css"/>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
 	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	<!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+    <!-- //online-fonts -->
     </head>
     <!-- END HEAD -->
 	
@@ -57,15 +74,8 @@
                     <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-								<li class="js_nav-item nav-item" class="dropdown">
-									<a href="#" class="nav-item-child nav-item-hover" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Anniversary<span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="https://aokieidos.github.io/Valentines/" ></span>valentines</a></li>
-										<li role="separator"></li>
-									</ul>
-								</li>
-                                <!--li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://aokieidos.github.io/Valentines/" target="_blank">Anniversary</a></li>-->
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html">Home</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://aokieidos.github.io/Valentines/" target="_blank">Anniversary</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="article.html">Articles</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="travel.html">Traveling</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="wish.html">Wishes</a></li>
@@ -79,47 +89,113 @@
             <!-- Navbar -->
         </header>
         <!--========== END HEADER ==========-->
-
-        <!--========== SLIDER ==========-->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <div class="container">
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                </ol>
             </div>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
+                <div class="item">
                     <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
                     <div class="container">
                         <div class="carousel-centered">
                             <div class="margin-b-40">
-                                <h1 class="carousel-title">Enjoy time with U</h1>
-                                <p class="color-white">When I am with you, you are the world <br/> When not, my world is all of you</p>
+                                <h2 class="carousel-title">我们的征途是星辰大海</h2>
+                                <p class="color-white">
+								优化页面背景与图片显示 - doing <br/>
+								--中国地图 or 3d地图背景 添加交互式UI 记录走过的地方<br/>
+								--timeline<br/>
+								--图片集开发</p>
                             </div>
-                            <a href="https://aokieidos.github.io/Valentines/" target="_blank" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Valentines</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="img-responsive" src="img/1920x1080/02.jpg" alt="Slider Image">
-                    <div class="container">
-                        <div class="carousel-centered">
-                            <div class="margin-b-40">
-                                <h2 class="carousel-title">Love you forever and ever</h2>
-                                <p class="color-white">Past is not involved <br/> The rest of the life please enlighten</p>
-                            </div>
-                            <a class="btn-theme btn-theme-sm btn-white-brd text-uppercase">TBD</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--========== SLIDER ==========-->
+    <section class="gallery" id="gallery">
+        <div class="container py-lg-5">
+           <h3 class="w3_head mb-5">Time & Moment</h3>
+			 <div class="row news-grids mt-lg-5 mt-4 text-center">
+                <div class="col-md-6 gal-img">
+                    <a href="#gal1"><img src="images/g2.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-6 proj-1 gal-img">
+                    <a href="#gal2"><img src="images/g3.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-6 mt-5 gal-img">
+                    <a href="#gal3"><img src="images/g4.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-6 mt-5 gal-img">
+                    <a href="#gal4"><img src="images/g5.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-6 mt-5 gal-img">
+                    <a href="#gal5"><img src="images/g6.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-6 mt-5 gal-img">
+                    <a href="#gal6"><img src="images/g7.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+        <!-- popup-->
+        <div id="gal1" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g2.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Test1.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup -->
 
+        <!-- popup-->
+        <div id="gal2" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g3.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Test1.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal3" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g4.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Test1.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup3 -->
+        <!-- popup-->
+        <div id="gal4" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g5.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Test1.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal5" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Test1.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal6" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g7.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Test1.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup -->
+    </section>
+        <!--========== SLIDER ==========-->
+		
         <!--========== PAGE LAYOUT ==========-->
 
         <!--========== END PAGE LAYOUT ==========-->
@@ -127,41 +203,7 @@
         <!--========== FOOTER ==========-->
         <footer class="footer">
             <!-- Links -->
-            <div class="section-seperator">
-                <div class="content-md container">
-                    <div class="row">
-                        <div class="col-sm-2 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-							    <li class="footer-list-item">01101100</a></li>
-                                <li class="footer-list-item">01101111</a></li>
-                                <li class="footer-list-item">01110110</a></li>
-                                <li class="footer-list-item">01100101</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-2 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item">01111001</a></li>
-                                <li class="footer-list-item">01101111</a></li>
-                                <li class="footer-list-item">01110101</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-3">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item">..</a></li>
-                                <li class="footer-list-item">.-.. --- ...- .</a></li>
-                                <li class="footer-list-item"> -.-- --- ..-</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
+
             <!-- End Links -->
 
             <!-- Copyright -->
@@ -188,7 +230,6 @@
         <script src="vendor/jquery.min.js" type="text/javascript"></script>
         <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
         <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-		<script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
 
         <!-- PAGE LEVEL PLUGINS -->
         <script src="vendor/jquery.easing.js" type="text/javascript"></script>
@@ -208,7 +249,7 @@
         <script src="js/components/google-map.min.js" type="text/javascript"></script>
 		
 		<audio id="bgmusic" autoplay="autoplay" loop="loop" preload="auto"
-			src="http://music.163.com/song/media/outer/url?id=468490564.mp3">
+			src="http://music.163.com/song/media/outer/url?id=4937739.mp3">
 		</audio>
 		<script type="text/javascript">
 			function toggleSound() {
