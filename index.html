@@ -2,26 +2,6 @@
 <html lang="en" class="no-js">
     <!-- BEGIN HEAD -->
     <head>
-	<script type="text/javascript">
-		function password() {
-			var testV = 1;
-			var pass1 = prompt('Guess the password, haha~','');
-			while (testV < 3) {
-				if (!pass1)
-					history.go(-1);
-				if (pass1 == "H") {
-					break;
-				}
-				testV+=1;
-				var pass1 =
-				prompt('password error, pls input again!');
-			}
-			if (pass1!="password" & testV ==3)
-			history.go(-1);
-			return " ";
-			}
-		document.write(password());
-	</script>
         <meta charset="utf-8"/>
         <title>Only for H</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,9 +23,10 @@
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     </head>
     <!-- END HEAD -->
-
+	
     <!-- BODY -->
     <body id="body" data-spy="scroll" data-target=".header">
 
@@ -217,6 +198,44 @@
         <script src="js/components/swiper.min.js" type="text/javascript"></script>
         <script src="js/components/masonry.min.js" type="text/javascript"></script>
         <script src="js/components/google-map.min.js" type="text/javascript"></script>
+		
+		<audio id="bgmusic" autoplay="autoplay" loop="loop" preload="auto"
+			src="http://music.163.com/song/media/outer/url?id=468490564.mp3">
+		</audio>
+		<script type="text/javascript">
+			function toggleSound() {
+				var music = document.getElementById("bgmusic");
+				console.log(music);
+				console.log(music.paused);
+				if (music.paused) {
+					music.paused=false;
+					music.play();
+				}  
+				music.play();
+			}
+			setInterval("toggleSound()",1);
+		</script>
+		<script type="text/javascript">
+			function audioAutoPlay(id) {
+				var audio = document.getElementById(id);
+
+				if (window.WeixinJSBridge) {
+					WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+						audio.play();
+					}, false);
+				} else {
+					document.addEventListener("WeixinJSBridgeReady", function () {
+						WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+							audio.play();
+						});
+					}, false);
+				}
+				audio.play();
+
+				return false;
+			}
+			audioAutoPlay('bgmusic');
+		</script>
 
     </body>
     <!-- END BODY -->
